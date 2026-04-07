@@ -72,7 +72,8 @@ button.addEventListener("click", function() {
 // Change the volume based on the slider and update the volume information.
 document.querySelector("#slider").addEventListener("input", function() {
 	video.volume = document.querySelector("#slider").value / 100;
-	document.querySelector("#slider").innerHTML = video.volume +"%";
+	document.querySelector("#volume").innerHTML = video.volume * 100 +"%";
+	console.log("Volume is " + video.volume * 100 + "%")
 	console.log("The current value is " + video.volume);
 });
 
