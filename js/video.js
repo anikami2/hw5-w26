@@ -17,9 +17,8 @@ document.querySelector("#play").addEventListener("click", function() {
 	// const video = document.getElementById("player1")
 	video.play()
 	console.log("Play Video");
+	document.querySelector("#volume").innerHTML = video.volume * 100 +"%";
 });
-
-document.querySelector("#volume").innerHTML = video.volume * 100 +"%";
 
 // Pause the video.
 
@@ -74,7 +73,7 @@ button.addEventListener("click", function() {
 document.querySelector("#slider").addEventListener("input", function() {
 	video.volume = document.querySelector("#slider").value / 100;
 	document.querySelector("#slider").innerHTML = video.volume +"%";
-	console.log("Volume Information: " + video.volume);
+	console.log("The current value is " + video.volume);
 });
 
 // Utilize the existing oldSchool class on the video element
