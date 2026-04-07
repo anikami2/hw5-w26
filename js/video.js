@@ -85,7 +85,7 @@ document.querySelector("#vintage").addEventListener("click", function() {
 
 // Remove the oldSchool class from the video.
 document.querySelector("#orig").addEventListener("click", function() {
-	video.classList.add("orig");
+	video.classList.remove("orig");
 	console.log("Old school is removed");
 });
 
