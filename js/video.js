@@ -79,14 +79,14 @@ document.querySelector("#slider").addEventListener("input", function() {
 
 // Utilize the existing oldSchool class on the video element
 document.querySelector("#vintage").addEventListener("click", function() {
-	video.classList.add("vintage");
+	video.classList.add("oldSchool");
 	console.log("Old school is added");
 });
 
 // Remove the oldSchool class from the video.
 document.querySelector("#orig").addEventListener("click", function() {
-	video.classList.remove("orig");
-	console.log("Old school is removed");
+	video.classList.remove("oldSchool");
+	console.log("oldSchool");
 });
 
 
